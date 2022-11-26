@@ -60,6 +60,28 @@
     list-style-type: none;
 }
 
+.nav-navbar ul li {
+    position: relative;
+}
+
+.nav-navbar ul li:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-navbar ul li:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .nav-navbar > ul > li > a {
     color: var(--light);
     text-decoration: none;
