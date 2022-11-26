@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1200px) {
+    :root {
+        --font-p-large: 16px;
+        --font-heading-large: 64px;
+        --font-heading-small: 40px;
+        --font-overlay: 200px;
+        --landing-content-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 928px) {
+    /* :root {
+        --font-p-large: 16px;
+        --font-heading-large: 64px;
+        --font-heading-small: 40px;
+        --font-overlay: 200px;
+        --landing-content-width: 90%;
+    } */
+
+    :root {
+        --hero-hg-top: -200px;
+    }
+
+    .content-inner-wrapper {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .content-inner-wrapper > .content-left {
+        width: 80%;
+        padding: unset;
+    }
+
+    .content-inner-wrapper:nth-child(even) {
+        flex-flow: unset;
+        flex-direction: column;
+    }
+
+    .content-inner-wrapper:nth-child(even) > .content-left {
+        padding-right: 0;
+        margin-left: unset;
+        width: 80%;
+    }
+
+    .content-inner-wrapper > .content-right {
+        width: 80%;
+    }
+
+    .content-left > h1 > span {
+        top: -150px;
+        left: -92px;
+    }
+
+}
+
+@media only screen and (max-width: 756px) {
+    :root {
+        --hero-hg-top: -100px;
+        --font-heading-large: 56px;
+    }
+
+    .nav-navbar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-content-mid {
+        width: 80%;
+        z-index: 999;
+    }
+
+}
+
+@media only screen and (max-width: 688px) {
+    :root {
+        --hero-hg-top: -100px;
+        --hero-mg-top: 668px;
+    }
+
+    .landing-content-wrapper {
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width: 566px) {
+    :root {
+        --hero-hg-top: -150px;
+        --hero-mg-top: 400px;
+        --hero-vg-top: 500px;
+        --font-heading-large: 40px;
+    }
+
+    .nav-navbar > p {
+        font-size: 20px;
+    }
+
+    .landing-content-wrapper {
+        top: 0px;
+    }
+
+    .landing-content-wrapper::before {
+        height: 100px;
+        top: -100px;
+    }
+
+    .content-inner-wrapper:first-child {
+        margin-top: 300px;
+    }
+
+    .landing-footer {
+        flex-direction: column;
+        margin-top: -100px;
+        gap: 100px;
+    }
+}

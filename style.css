@@ -9,7 +9,17 @@
     --accent: #FBD784;
     --dark: #0B1D26;
 
+    --font-p-large: 18px;
+    --font-overlay: 240px;
+    --font-heading-small: 48px;
+
+    --font-heading-large: 88px;
+
     --landing-content-width: 80%;
+
+    --hero-hg-top: -400px;
+    --hero-mg-top: 768px;
+    --hero-vg-top: 768px;
 }
 
 .body-wrapper {
@@ -85,7 +95,7 @@
 .nav-navbar > ul > li > a {
     color: var(--light);
     text-decoration: none;
-    font-size: 18px;
+    font-size: var(--font-p-large);
     font-weight: 700;
 }
 
@@ -98,7 +108,7 @@
 }
 
 .nav-navbar > div > span {
-    font-size: 17px;
+    font-size: var(--font-p-large);
     color: var(--light);
 }
 
@@ -112,20 +122,20 @@
 
 .hero-hg {
     z-index: -10;
-    top: -400px;
+    top: var(--hero-hg-top);
     left: -10px;
     transform: translateZ(-10px) scale(2);
 }
 
 .hero-mg {
-    top: 768px;
+    top: var(--hero-mg-top);
     left: -10px;
     transform: translateZ(-10px) scale(2);
     z-index: -10;
 }
 
 .hero-vg {
-    top: 768px;
+    top: var(--hero-vg-top);
     left: -5px;
     transform: translateZ(-5px) scale(1.5);
     z-index: -5;
@@ -175,7 +185,7 @@
 }
 
 .header-content-mid > h1 {
-    font-size: 88px;
+    font-size: var(--font-heading-large);
     color: var(--light);
     font-weight: 600;
 }
@@ -194,7 +204,7 @@
 }
 
 .content-mid-top-flex > span {
-    font-size: 18px;
+    font-size: var(--font-p-large);
     font-weight: 800;
     color: var(--accent);
     letter-spacing: 6px;
@@ -210,7 +220,7 @@
 
 .content-mid-bottom-flex > span {
     color: var(--light);
-    font-size: 18px;
+    font-size: var(--font-p-large);
     font-weight: 700;
 }
 
@@ -236,7 +246,7 @@
 }
 
 .landing-content {
-    width: 80%;
+    width: var(--landing-content-width);
     margin: 0 auto;
     height: auto;
     background-color: transparent;
@@ -250,7 +260,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .content-inner-wrapper:nth-child(even) {
@@ -274,12 +283,12 @@
 }
 
 .content-left > h1 {
-    font-size: 48px;
+    font-size: var(--font-heading-small);
     position: relative;
 }
 
 .content-left > h1 > span {
-    font-size: 240px;
+    font-size: var(--font-overlay);
     position: absolute;
     top: -150%;
     left: -30%;
@@ -290,7 +299,7 @@
 .content-left > p {
     color: var(--light);
     line-height: 32px;
-    font-size: 18px;
+    font-size: var(--font-p-large);
 }
 
 .content-left .content-mid-bottom-flex span {
@@ -304,7 +313,7 @@
 /* landing footer */
 
 .landing-footer {
-    width: 80%;
+    width: var(--landing-content-width);
     margin: 0 auto;
     padding-bottom: 100px;
     display: flex;
@@ -328,7 +337,7 @@
 
 .footer-left div p {
     line-height: 32px;
-    font-size: 18px;
+    font-size: var(--font-p-large);
 }
 
 .footer-left-heading {
@@ -337,7 +346,7 @@
 
 .footer-left span {
     color: var(--light);
-    font-size: 18px;
+    font-size: var(--font-p-large);
     opacity: 0.5;
 }
 
@@ -364,7 +373,7 @@
 
 .footer-right div ul li a {
     color: var(--light);
-    font-size: 18px;
+    font-size: var(--font-p-large);
     text-decoration: none;
 }
 
